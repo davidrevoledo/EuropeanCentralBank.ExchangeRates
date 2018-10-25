@@ -14,6 +14,12 @@
         private readonly SemaphoreSlim _semaphore = new SemaphoreSlim(1);
         private RootObject _root;
 
+        /// <summary>
+        ///     Get all supported currencies from the European Central Bank
+        ///     Euro is not being returned as it will always be 1
+        /// </summary>
+        /// <returns>A collection of Currencies</returns>
+        /// <see cref="Currencies"/>
         public async Task<IEnumerable<Currency>> GetCurrenciesAsync()
         {
             await FetchRates()

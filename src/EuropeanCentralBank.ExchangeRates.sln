@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0FBD113E-A3D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EuropeanCentralBank.ExchangeRates", "EuropeanCentralBank.ExchangeRates\EuropeanCentralBank.ExchangeRates.csproj", "{F9BCAD1F-33F8-4C61-8705-E4DB41C9E27E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{D055926E-8C7C-448A-A4ED-E0AC7CC88D44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECB.Sample", "ECB.Sample\ECB.Sample.csproj", "{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,12 +39,29 @@ Global
 		{F9BCAD1F-33F8-4C61-8705-E4DB41C9E27E}.Release|x64.Build.0 = Release|Any CPU
 		{F9BCAD1F-33F8-4C61-8705-E4DB41C9E27E}.Release|x86.ActiveCfg = Release|Any CPU
 		{F9BCAD1F-33F8-4C61-8705-E4DB41C9E27E}.Release|x86.Build.0 = Release|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Debug|ARM.Build.0 = Debug|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Debug|x64.Build.0 = Debug|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Debug|x86.Build.0 = Debug|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Release|ARM.ActiveCfg = Release|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Release|ARM.Build.0 = Release|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Release|x64.ActiveCfg = Release|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Release|x64.Build.0 = Release|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Release|x86.ActiveCfg = Release|Any CPU
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F9BCAD1F-33F8-4C61-8705-E4DB41C9E27E} = {0FBD113E-A3D1-439C-8264-05A801FB78ED}
+		{68EC08F1-7EFF-4B19-9E81-0E1EF32EBC7F} = {D055926E-8C7C-448A-A4ED-E0AC7CC88D44}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB8A256B-50B0-4858-99C9-C07A9F8DA180}
