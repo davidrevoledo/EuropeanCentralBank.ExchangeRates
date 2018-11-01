@@ -42,9 +42,10 @@ namespace EuropeanCentralBank.ExchangeRates
         /// </summary>
         /// <returns>A collection of Currencies</returns>
         /// <see cref="Currencies"/>
-        public Task<IEnumerable<Currency>> GetCurrenciesAsync()
+        public async Task<IEnumerable<Currency>> GetCurrenciesAsync()
         {
-            var xml = _webClient.Value.DownloadString(Url);
+            var xml = await _webClient.Value.DownloadStringTaskAsync(Url)
+                .ConfigureAwait(false);
 
             var doc = new XmlDocument();
             doc.LoadXml(xml);
@@ -58,8 +59,7 @@ namespace EuropeanCentralBank.ExchangeRates
                 Symbol = r.Currency
             });
 
-            // todo  use downloadstringasync
-            return Task.FromResult(currencies);
+            return currencies;
         }
     }
 }
