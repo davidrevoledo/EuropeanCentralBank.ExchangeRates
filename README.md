@@ -1,11 +1,28 @@
 # EuropeanCentralBank.ExchangeRates
 European CentralBank  ExchangeRates Api Client for C#  / uses the European Central Bank's daily feed for accuracy
 
+
+[![Build status](https://ci.appveyor.com/api/projects/status/mqxsdtbprpyu7pi4?svg=true)](https://ci.appveyor.com/project/davidrevoledo/europeancentralbank-exchangerates)
+[![CodeFactor](https://www.codefactor.io/repository/github/davidrevoledo/europeancentralbank.exchangerates/badge)](https://www.codefactor.io/repository/github/davidrevoledo/europeancentralbank.exchangerates)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![NuGet](https://img.shields.io/nuget/v/EuropeanCentralBank.ExchangeRates.svg)
+![NuGet](https://img.shields.io/nuget/dt/EuropeanCentralBank.ExchangeRates.svg)
+
 Port of https://github.com/facundofarias/ecb-exchange-rates
 
 For : https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
 
 # Installation
+
+To Install from the Nuget Package Manager Console 
+
+```sh
+PM > Install-Package EuropeanCentralBank.ExchangeRates
+NET CLI - dotnet add package EuropeanCentralBank.ExchangeRates
+paket paket add EuropeanCentralBank.ExchangeRates
+```
+
+Available here https://www.nuget.org/packages/EuropeanCentralBank.ExchangeRates/#
 
 # Usage
 Using the libary should be straight forward 
