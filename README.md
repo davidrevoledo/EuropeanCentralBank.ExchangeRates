@@ -49,7 +49,7 @@ Using double rule of 3 for calculation with a non euro base conversion.
     Console.WriteLine($"You spent {originalAmount} CHF and it is equals to {amountInDollars} in USD");
 ```
 
-Here is a sample  https://github.com/davidrevoledo/EuropeanCentralBank.ExchangeRates/tree/master/src/ECB.Sample
+[Sample here ](https://github.com/davidrevoledo/EuropeanCentralBank.ExchangeRates/tree/master/src/ECB.Sample)
 
 # Supported Currencies
 
