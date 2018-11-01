@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
+    <PackageId>EuropeanCentralBank.ExchangeRates</PackageId>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>David Revoledo (Devit)</Authors>
+    <Company>DGENIX</Company>
+    <Description>Get Currencies information from European Central Bank</Description>
+    <PackageTags>C# SDK ECB Currencies Europe</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

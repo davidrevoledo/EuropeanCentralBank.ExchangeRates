@@ -1,4 +1,28 @@
-﻿namespace EuropeanCentralBank.ExchangeRates
+﻿//MIT License
+//Copyright(c) 2017 David Revoledo
+
+//Permission is hereby granted, free of charge, to any person obtaining a copy
+//of this software and associated documentation files (the "Software"), to deal
+//in the Software without restriction, including without limitation the rights
+//to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//copies of the Software, and to permit persons to whom the Software is
+//furnished to do so, subject to the following conditions:
+
+//The above copyright notice and this permission notice shall be included in all
+//copies or substantial portions of the Software.
+
+//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//SOFTWARE.
+// Project Lead - David Revoledo davidrevoledo@d-genix.com
+
+using System;
+
+namespace EuropeanCentralBank.ExchangeRates
 {
     using System.Collections.Generic;
     using System.Linq;
@@ -13,6 +37,7 @@
         private const string Url = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
         private readonly SemaphoreSlim _semaphore = new SemaphoreSlim(1);
         private RootObject _root;
+        private readonly Lazy<WebClient> _webClient = new Lazy<WebClient>(() => new WebClient());
 
         /// <summary>
         ///     Get all supported currencies from the European Central Bank
@@ -42,8 +67,7 @@
                 await _semaphore.WaitAsync()
                     .ConfigureAwait(false);
 
-                var client = new WebClient();
-                var xml = client.DownloadString(Url);
+                var xml = _webClient.Value.DownloadString(Url);
 
                 var doc = new XmlDocument();
                 doc.LoadXml(xml);
