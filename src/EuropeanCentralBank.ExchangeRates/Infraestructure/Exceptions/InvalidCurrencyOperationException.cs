@@ -6,13 +6,11 @@
     {
         public InvalidCurrencyOperationException()
         {
-
         }
 
         public InvalidCurrencyOperationException(string errorMessage)
         : base(errorMessage)
         {
-
         }
 
         public static InvalidCurrencyOperationException CurrencyNotFound(Currencies currency)
