@@ -2,6 +2,7 @@
 European CentralBank  ExchangeRates Api Client for C#  / uses the European Central Bank's daily feed for accuracy
 
 Port of https://github.com/facundofarias/ecb-exchange-rates
+For : https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
 
 # Installation
 
