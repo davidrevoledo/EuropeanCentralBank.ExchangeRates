@@ -34,7 +34,7 @@ namespace EuropeanCentralBank.ExchangeRates
     public class ExchangeRatesSource : IExchangeRatesSource
     {
         private const string Url = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
-        private readonly Lazy<WebClient> _webClient = new Lazy<WebClient>(() => new WebClient());
+        private readonly Lazy<WebClient> _webClient = new Lazy<WebClient>();
 
         /// <summary>
         ///     Get all supported currencies from the European Central Bank
