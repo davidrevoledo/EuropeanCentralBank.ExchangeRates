@@ -18,6 +18,9 @@ Get Currencies information
 Currencies conversion (always using Euro as a base)
 Using double rule of 3 for calculation with a non euro base conversion.
 ``` C#
+    
+    IExchangeRatesCalculator calculator = new ExchangeRatesCalculator(source); // will take any IExchangeRatesSource
+
     double originalAmount = 40;
     var amountInEuros = await calculator.Calculate(Currencies.USDollar, Currencies.Euro, originalAmount);
     Console.WriteLine($"You spent {originalAmount} US and it is equals to {amountInEuros} in EU");
