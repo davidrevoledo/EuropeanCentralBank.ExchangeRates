@@ -1,6 +1,10 @@
 # EuropeanCentralBank.ExchangeRates
 European CentralBank  ExchangeRates Api Client for C#  / uses the European Central Bank's daily feed for accuracy
 
+<p align="center">
+  <img src="EuropeanCentralBank.ExchangeRates.jpg" alt="AutoLoad" width="100"/>
+</p>
+
 [![Build status](https://ci.appveyor.com/api/projects/status/mqxsdtbprpyu7pi4?svg=true)](https://ci.appveyor.com/project/davidrevoledo/europeancentralbank-exchangerates)
 [![CodeFactor](https://www.codefactor.io/repository/github/davidrevoledo/europeancentralbank.exchangerates/badge)](https://www.codefactor.io/repository/github/davidrevoledo/europeancentralbank.exchangerates)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -90,5 +94,8 @@ Using double rule of 3 for calculation with a non euro base conversion.
  
  Disclaimer ECB Api may remove some of the supported currencies, the library is ready to don't break in that case but nothing will be retrieved for that currency, for more information please see : 
 https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html
+
+### Icon
+Created by [Mariana Alemanno](https://www.behance.net/mariana-alemanno)
 
 Made with ❤ in [DGENIX](https://www.dgenix.com/)
